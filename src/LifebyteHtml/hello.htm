@@ -1,13 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html>
 <html lang="en-US">
- <head>
-  <title>Sample page</title>
- </head>
- <body>
-  <h1>Sample page</h1>
-  <p>This is a <a href="demo.html">simple</a> sample.</p>
-  <!-- this is a comment -->
-  John was here
- </body>
+<head>
+    <title>Sample pages</title>
+    <style type="text/css">
+        /* Declare HTML Rules first! */
+        /* Tag */
+        h1
+        {
+            color: Red;
+            font-size: 48px;
+        }
+        
+        h1 span
+        {
+            color: Purple;
+            font-size: 48px;
+        }
+        
+        /* Classes later */
+        .green, #blue /* , means OR */
+        {
+            color: Green;
+        }
+        
+        /* ID selector */
+        #orange
+        {
+            color: Orange;
+        }
+        #blue
+        {
+            color: Blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>
+        Sample page</h1>
+     <h1 class="green">   
+        More Sample page</h1>
+     <h1 id="orange">   
+        More Sample page</h1>
+         <h1 id="blue">   
+        More <span>Sample</span> page</h1>
+    <p>
+        This is a <a href="demo.html">simple</a> sample.</p>
+    <!-- this is a comment -->
+    John was here
+</body>
 </html>
